@@ -8,13 +8,16 @@
 	<body>
 		<h3>Gist requests</h3>
 		How many pages of results would you like displayed?
-		<input type="text" id="userPageInput"/>
+		<input type="number" id="pagesToDisplay"/>
 		<br/>
 		What language would you like to see? <br/>
 		Python <input type="checkbox" name="language" value="Python" id="Python"/><br/>
 		JSON <input type="checkbox" name="language" value="JSON" id="JSON"/><br/>
 		JavaScript <input type="checkbox" name="language" value="JavaScript" id="JavaScript"/><br/>
 		SQL <input type="checkbox" name="language" value="SQL" id="SQL"/><br/>
-		<input type="submit" value="submit"/>
+		<input type="button" value="submit" onclick="getGists()"/>
+		<script src="src/assign3part2.js"></script>
+		
+		<div id="output"></div>
 	</body>
 </html>
